@@ -6,9 +6,9 @@ Simple tool to create JPG from H5 master file.
 
 ## Requires:
 
-[eiger2cbf] (https://github.com/biochem-fan/eiger2cbf)
+[eiger2cbf](https://github.com/biochem-fan/eiger2cbf)
 
-[diff2jpeg] (http://www.ccp4.ac.uk/html/DiffractionImage.html)
+[diff2jpeg](http://www.ccp4.ac.uk/html/DiffractionImage.html)
 
 Python 2.x or 3.x
 
