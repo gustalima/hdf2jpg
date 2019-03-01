@@ -1,0 +1,26 @@
+#!/usr/bin/env python
+import os
+import sys
+import subprocess
+
+param=sys.argv
+
+h5master=param[1]
+imgnb=param[2]
+
+name=h5master.split("_master")[0]
+
+print("Converting H5 to CBF\n")
+converto2cbf="eiger2cbf "+h5master+" "+imgnb+" "+name+"_"+imgnb+".cbf"
+subprocess.call(converto2cbf, shell=True)
+print(" Done\n")
+
+print("Converting to JPG\n")
+convert2jpeg="diff2jpeg "+name+"_"+imgnb+".cbf"
+subprocess.call(convert2jpeg, shell=True)
+print(" Done\n")
+print("Cleaning up\n")
+clean_up="rm "+name+"_"+imgnb+".cbf"
+
+print(" Done")
+
