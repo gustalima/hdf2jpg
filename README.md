@@ -14,10 +14,10 @@ Simple tool to create JPG from H5 master file.
 
 add to your path or run full file path 
 
-hdf2jpg <master.h5> [fragmeNumber]
+hdf2jpg <master.h5> [frameNumber/frameList]
 
 ### Example
 
-```hdf2jpg protein_master.h5 45```
+```hdf2jpg protein_master.h5 0 45 90 135 180```
 
-This will create a JPG of frame 45 from protein_master file. 
+This will create a JPG of frames 0 45 90 135 180 from protein_master file. 
